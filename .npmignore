@@ -1,7 +1,8 @@
 build/
 config/
 examples/
-node-modules/
+node_modules/
+src/
 index.html
 .babelrc
 path.json
