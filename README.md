@@ -1,6 +1,6 @@
 # owl redux
 
- A simple version of redux
+ A simple version of redux, `Typescript` support.
 
 ## Introduction
 
@@ -38,3 +38,7 @@ $ yarn start
 | combineReducers | Combine multiple reducers into one `reducer` |
 | replaceReducer | Replace `reducer` function |
 | middleware | Extending the `dispatch` function |
+
+## More
+
+[Create redux from scratch](https://github.com/dengwb1991/lifelong-learning/tree/master/relearn-redux)
