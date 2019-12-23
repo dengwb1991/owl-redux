@@ -1,5 +1,6 @@
 'use strict'
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -14,7 +15,12 @@ module.exports = {
     libraryTarget: 'umd'
   },
   plugins: [
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin({
+      useTypescriptIncrementalApi: true,
+      reportFiles: ['src/**/*.{ts}'],
+      memoryLimit: 4096
+    })
   ],
   optimization: {
     minimize: false,

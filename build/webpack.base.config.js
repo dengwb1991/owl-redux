@@ -10,7 +10,10 @@ const resolve = (dir) => {
 const createLintingRule = () => ({
   test: /\.(ts|tsx)$/,
   use: [{
-    loader: 'ts-loader'
+    loader: 'ts-loader',
+    options: {
+      transpileOnly: true
+    }
   }, {
     loader: 'eslint-loader',
     options: {
